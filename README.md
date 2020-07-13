@@ -56,28 +56,41 @@
 
 #### Snippets
 
-1) Inputs
- ![FirstName](/MarkDown/FirstName.PNG)
- ![LastName](/MarkDown/LastName.PNG)
- ![EmailList](/MarkDown/EmailList.PNG)
+1) Inputs:
 
- 2) Email Sent Confirmation
+
+ ![FirstName](/MarkDown/FirstName.PNG) |
+![LastName](/MarkDown/LastName.PNG)  |
+
+![EmailList](/MarkDown/EmailList.PNG)  |   
+
+ 2) Email Sent Confirmation:
+
 ![Confirmation](/MarkDown/Confirmation.PNG)
 
-3) Email Notification
+3) Email Notification:
+
 ![EmailNotification](/MarkDown/ReceivedMail.PNG)
 
-4) Logs
+4) Logs:
+
 ![Logs](/MarkDown/Logs.PNG)
 
-5) Queue Transaction
+5) Queue Transaction:
+
 ![Transaction](/MarkDown/TransactionStatus.PNG)
 
-6) SendGMail_Queue
+6) SendGMail_Queue:
+
 ![SendGMail_Queue](/MarkDown/SendGMail_Queue.PNG)
 
-7) Java Code for Welcome Message
+7) Java Code for Welcome Message:
+
 ![JavaCode](/MarkDown/JavaCode.PNG)
+
+
+
+Java code:
 
 ```Java
 public static String welcomeMessage(String firstName, String lastName) {
@@ -88,14 +101,11 @@ public static String welcomeMessage(String firstName, String lastName) {
 	}
   
 ```
+
+Logs:
+
  ```text
  07-13-2020 05:17:05 PM IST [ INFO - com.uipath.javaextesion.HelloWorld - line#: 29] - Enter into welcomeMessage(): firstName=JagadheeswarReddy, lastName=Punnati
 07-13-2020 05:17:05 PM IST [ INFO - com.uipath.javaextesion.HelloWorld - line#: 31] - Exit from welcomeMessage() with message= Welcome to UiPath!! Punnati, JagadheeswarReddy
 
  ```
- 
- 
- 
- 
- 
- 
