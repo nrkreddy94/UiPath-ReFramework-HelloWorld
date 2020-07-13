@@ -63,33 +63,39 @@
 ![LastName](/MarkDown/LastName.PNG)  |
 ![EmailList](/MarkDown/EmailList.PNG)|  
 
+<br/>
  2) Email Sent Confirmation:
 
 ![Confirmation](/MarkDown/Confirmation.PNG)
+<br/>
 
 3) Email Notification:
 
 ![EmailNotification](/MarkDown/ReceivedMail.PNG)
+<br/>
 
 4) Logs:
 
 ![Logs](/MarkDown/Logs.PNG)
+<br/>
 
 5) Queue Transaction:
 
 ![Transaction](/MarkDown/TransactionStatus.PNG)
+<br/>
 
 6) SendGMail_Queue:
 
 ![SendGMail_Queue](/MarkDown/SendGMail_Queue.PNG)
 
-7) Java Code for Welcome Message:
+<br/>
+
+7) Java Code:
 
 ![JavaCode](/MarkDown/JavaCode.PNG)
 
-
-
-Java code:
+<br/>
+Java code for Welcome Message:
 
 ```Java
 public static String welcomeMessage(String firstName, String lastName) {
@@ -100,7 +106,7 @@ public static String welcomeMessage(String firstName, String lastName) {
 	}
   
 ```
-
+<br/>
 Logs:
 
  ```text
@@ -108,6 +114,4 @@ Logs:
 07-13-2020 05:17:05 PM IST [ INFO - com.uipath.javaextesion.HelloWorld - line#: 31] - Exit from welcomeMessage() with message= Welcome to UiPath!! Punnati, JagadheeswarReddy
 
  ```
- 
- 
- 
+ <br/><br/>
