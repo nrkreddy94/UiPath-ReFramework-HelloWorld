@@ -58,13 +58,12 @@
 
 1) Inputs:
 
-
 |![FirstName](/MarkDown/FirstName.PNG) |
 ![LastName](/MarkDown/LastName.PNG)  |
 ![EmailList](/MarkDown/EmailList.PNG)|  
-
 <br/>
- 2) Email Sent Confirmation:
+
+2) Email Sent Confirmation:
 
 ![Confirmation](/MarkDown/Confirmation.PNG)
 <br/>
