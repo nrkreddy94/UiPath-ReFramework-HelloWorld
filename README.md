@@ -1,6 +1,6 @@
 ### Documentation is included in the Documentation folder ###
 
-[ReFrameWork Documentation](https://github.com/UiPath/ReFrameWork/blob/master/Documentation/REFramework%20documentation.pdf)
+[ReFrameWork Documentation](https://github.com/nrkreddy94/UiPath_ReFramework_HelloWorld/blob/master/Documentation/REFramework%20documentation.pdf)
 
 ### ReFrameWork Template ###
 **Robotic Enterprise Framework**
@@ -14,7 +14,6 @@
 * takes screenshots in case of application exceptions
 * provides extra utility workflows like sending a templated email
 * runs sample Notepad application with dummy Excel input data
-* 
 
 
 ### How It Works ###
@@ -42,9 +41,61 @@
  + *CloseAllApplications* - As listed in Config("CloseApps")
 
 
-### For New Project ###
+###  ReFramework HelloWorld Application ###
+![RE_HelloWorld_Files](/MarkDown/RE_HelloWorld_Files.PNG)
 
-1. Check out the Config.xlsx file and add/customize any required fields and values
-2. Implement OpenApp and CloseApp workflows, linking them in the Config.xlsx fields
-3. Implement GetTransactionData and SetTransactionStatus or use ./Framework versions for Orchestrator queues
-4. Implement ProcessTransaction workflow and any invoked others
+
+#### WorkFlow Steps:
+1) Input Frist name,Last name, Emails to send welcome message notifications
+2) Pass Frstname and LastName to java method (JavaActivities) and it returns welcome message as response
+3) Pass Emails list to Activity "WriteEmailTo" which parse the emails and add to "SendMailConfig.xslx"
+4) Read all emailIds from this .xslx and add to "SendGMailQueue" 
+5) Read  Body and Subject of Email template from "SendMailConfig.xslx"
+6) Read all email Id one after one (Process) from Queue and send an email with welcome message
+7) Close all excel files which are opended
+
+#### Snippets
+
+1) Inputs
+ ![FirstName](/MarkDown/FirstName.PNG)
+ ![LastName](/MarkDown/LastName.PNG)
+ ![EmailList](/MarkDown/EmailList.PNG)
+
+ 2) Email Sent Confirmation
+![Confirmation](/MarkDown/Confirmation.PNG)
+
+3) Email Notification
+![EmailNotification](/MarkDown/ReceivedMail.PNG)
+
+4) Logs
+![Logs](/MarkDown/Logs.PNG)
+
+5) Queue Transaction
+![Transaction](/MarkDown/TransactionStatus.PNG)
+
+6) SendGMail_Queue
+![SendGMail_Queue](/MarkDown/SendGMail_Queue.PNG)
+
+7) Java Code for Welcome Message
+![JavaCode](/MarkDown/JavaCode.PNG)
+
+```Java
+public static String welcomeMessage(String firstName, String lastName) {
+		logger.info("Enter into welcomeMessage(): firstName=" + firstName + ", lastName=" + lastName);
+		String message = "Welcome to UiPath!! " + lastName + ", " + firstName;
+		logger.info("Exit from welcomeMessage() with message= " + message);
+		return message;
+	}
+  
+```
+ ```text
+ 07-13-2020 05:17:05 PM IST [ INFO - com.uipath.javaextesion.HelloWorld - line#: 29] - Enter into welcomeMessage(): firstName=JagadheeswarReddy, lastName=Punnati
+07-13-2020 05:17:05 PM IST [ INFO - com.uipath.javaextesion.HelloWorld - line#: 31] - Exit from welcomeMessage() with message= Welcome to UiPath!! Punnati, JagadheeswarReddy
+
+ ```
+ 
+ 
+ 
+ 
+ 
+ 
