@@ -59,10 +59,9 @@
 1) Inputs:
 
 
- ![FirstName](/MarkDown/FirstName.PNG) |
+|![FirstName](/MarkDown/FirstName.PNG) |
 ![LastName](/MarkDown/LastName.PNG)  |
-
-![EmailList](/MarkDown/EmailList.PNG)  |   
+![EmailList](/MarkDown/EmailList.PNG)|  
 
  2) Email Sent Confirmation:
 
@@ -109,3 +108,6 @@ Logs:
 07-13-2020 05:17:05 PM IST [ INFO - com.uipath.javaextesion.HelloWorld - line#: 31] - Exit from welcomeMessage() with message= Welcome to UiPath!! Punnati, JagadheeswarReddy
 
  ```
+ 
+ 
+ 
